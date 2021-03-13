@@ -1,14 +1,8 @@
 $(document).ready(function(){
 	$('#slidebox2').animate({ height: 'toggle' }, 0);
 
-	$("#file1Header").click(function () {
-		$('#slidebox2').animate({ height: 'toggle' }, 500);
-		$('#slidebox1').animate({ height: 'toggle' }, 500);
-	});
-	
-	$("#file2Header").click(function () {
-		$('#slidebox2').animate({ height: 'toggle' }, 500);
-		$('#slidebox1').animate({ height: 'toggle' }, 500);
+	$(".fileheader").click(function () {
+		$('.slidebox').animate({ height: 'toggle' }, 500);
 	});
 });
 
